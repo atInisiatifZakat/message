@@ -1,0 +1,51 @@
+{
+    "name": "inisiatif/message",
+    "description": "Message package using in Inisiatif Zakat Indonesia",
+    "license": "proprietary",
+    "type": "library",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://repo.packagist.com/inisiatif/"
+        },
+        {
+            "packagist.org": false
+        }
+    ],
+    "require": {
+        "php": "^7.4",
+        "ext-json": "*",
+        "enqueue/enqueue": "^0.10",
+        "enqueue/amqp-lib": "^0.10",
+        "illuminate/config": "^7.0",
+        "illuminate/console": "^7.0",
+        "php-amqplib/php-amqplib": "^2.11",
+        "webmozart/assert": "^1.9"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.3.1",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Inisiatif\\Package\\Message\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Inisiatif\\Package\\Message\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.1-dev"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
