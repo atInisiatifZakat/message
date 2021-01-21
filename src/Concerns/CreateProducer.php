@@ -34,6 +34,11 @@ trait CreateProducer
         );
     }
 
+    /**
+     * @psalm-suppress MoreSpecificReturnType
+     * @psalm-suppress UndefinedInterfaceMethod
+     * @psalm-suppress ArgumentTypeCoercion
+     */
     protected function createTopic(AmqpContext $context, string $topicName): AmqpTopic
     {
         $topic = $context->createTopic($topicName);

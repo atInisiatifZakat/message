@@ -34,6 +34,9 @@ abstract class ConsumerCommand extends Command implements AmqpAwareInterface
     /**
      * @throws BindingResolutionException
      * @throws Exception
+     *
+     * @psalm-suppress UndefinedInterfaceMethod
+     * @psalm-suppress ArgumentTypeCoercion
      */
     public function handle(): void
     {
@@ -56,6 +59,7 @@ abstract class ConsumerCommand extends Command implements AmqpAwareInterface
             $queue->setFlags(AmqpQueue::FLAG_DURABLE);
             $context->declareQueue($queue);
 
+            /** @psalm-suppress InvalidArgument */
             $bind = new AmqpBind($topic, $queue);
             $context->bind($bind);
 
