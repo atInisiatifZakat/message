@@ -17,8 +17,8 @@
         "ext-json": "*",
         "enqueue/enqueue": "^0.10",
         "enqueue/amqp-lib": "^0.10",
-        "illuminate/config": "^7.0|^8.0",
-        "illuminate/console": "^7.0|^8.0",
+        "illuminate/config": "^7.30|^8.26",
+        "illuminate/console": "^7.30|^8.26",
         "php-amqplib/php-amqplib": "^2.11",
         "webmozart/assert": "^1.9"
     },
