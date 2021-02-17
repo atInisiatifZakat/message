@@ -21,14 +21,8 @@ use Illuminate\Contracts\Container\BindingResolutionException;
 
 abstract class ConsumerCommand extends Command implements AmqpAwareInterface
 {
-    /**
-     * @var string
-     */
     protected $name = 'message:consume';
 
-    /**
-     * @var string
-     */
     protected $description = 'Consume message from AMQP';
 
     /**
