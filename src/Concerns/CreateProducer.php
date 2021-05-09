@@ -30,7 +30,8 @@ trait CreateProducer
         $context = $this->getConnection()->createContext();
 
         $context->createProducer()->send(
-            $this->createTopic($context, $topicName), $context->createMessage($message->toJson())
+            $this->createTopic($context, $topicName),
+            $context->createMessage($message->toJson())
         );
     }
 
