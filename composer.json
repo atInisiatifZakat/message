@@ -13,12 +13,12 @@
         }
     ],
     "require": {
-        "php": "^7.4|^8.0",
+        "php": "~8.0",
         "ext-json": "*",
         "enqueue/enqueue": "^0.10",
         "enqueue/amqp-lib": "^0.10",
-        "illuminate/config": "^7.30|^8.26",
-        "illuminate/console": "^7.30|^8.26",
+        "illuminate/config": "^8.26",
+        "illuminate/console": "^8.26",
         "php-amqplib/php-amqplib": "^3.0",
         "webmozart/assert": "^1.9"
     },
